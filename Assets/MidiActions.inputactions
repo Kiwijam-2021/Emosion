@@ -1,0 +1,27 @@
+{
+    "name": "MidiActions",
+    "maps": [
+        {
+            "name": "Midi",
+            "id": "f9ca6032-fa00-41bf-9e40-1e9ab23a8c42",
+            "actions": [
+                {
+                    "name": "Midi Buttons",
+                    "type": "Value",
+                    "id": "bcd461ed-272c-48a4-94b3-bffd1a05728c",
+                    "expectedControlType": "MidiValue",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": []
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Any",
+            "bindingGroup": "Any",
+            "devices": []
+        }
+    ]
+}

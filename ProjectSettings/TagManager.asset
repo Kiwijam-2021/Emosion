@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Blob
+  - P1_Timer
+  - P2_Timer
+  - Background
+  - GameOverCanvas
+  - PlayerOne
+  - PlayerTwo
+  - Center
+  - LeftField
+  - RightField
+  - Spawner
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - GameManager
+  - Water
+  - UI
+  - PostProcessing
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
