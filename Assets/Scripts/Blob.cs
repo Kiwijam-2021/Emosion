@@ -55,6 +55,10 @@ public class Blob : MonoBehaviour
 
     private void Awake()
     {
+    }
+    
+    private void Start()
+    {
         size = 1;
         _rb = GetComponent<Rigidbody2D>();
         _from = transform.localScale;
@@ -62,10 +66,11 @@ public class Blob : MonoBehaviour
         _createdAt = DateTime.UtcNow;
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _scored = false;
-        _gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
+        _gameManager = GameManager.Instance;
         _audioSource = GetComponent<AudioSource>();
         UpdateArea();
     }
+    
 
     private void Update()
     {

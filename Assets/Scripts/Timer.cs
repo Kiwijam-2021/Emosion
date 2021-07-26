@@ -16,15 +16,25 @@ public class Timer : MonoBehaviour
     {
         _tmp = GetComponent<TextMeshProUGUI>();
         _seconds = initialSeconds;
+
+        if (CompareTag(GameManager.PLAYER_1_TAG))
+        {
+            GameManager.Instance.playerOneTimer = this;
+        }
+        else
+        {
+            GameManager.Instance.playerTwoTimer = this;
+        }
     }
+
 
     // Update is called once per frame
     private void Update()
     {
         if (!_isRunning) return;
-        
+
         _seconds -= Time.deltaTime;
-        
+
         if (_seconds < 0)
         {
             _isFinished = true;
@@ -55,5 +65,12 @@ public class Timer : MonoBehaviour
     public void StopTimer()
     {
         _isRunning = false;
+    }
+
+    public void ResetTimer()
+    {
+        _isFinished = false;
+        _isRunning = false;
+        _seconds = initialSeconds;
     }
 }

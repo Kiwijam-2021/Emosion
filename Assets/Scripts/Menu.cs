@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
@@ -8,16 +9,11 @@ public class Menu : MonoBehaviour
 {
     public string MainSceneName = "Main";
     public string MenuSceneName = "Menu";
+    public string LoadingSceneName = "Loading";
     
     public void StartGame()
     {
-        SceneManager.LoadScene(MainSceneName);
-        var spawner = GameObject.FindGameObjectWithTag("Spawner");
-        if (spawner)
-        {
-            var script = spawner.GetComponent<Spawner>();
-            script.Reconnect();
-        }
+        SceneManager.LoadScene(LoadingSceneName);
     }
 
     public void QuitGame()

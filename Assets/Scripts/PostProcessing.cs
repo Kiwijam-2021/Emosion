@@ -22,12 +22,12 @@ public class PostProcessing : MonoBehaviour
     {
         if (Instance is not null)
         {
-            Destroy(this);
+            Destroy(gameObject);
+            return;
         }
 
-        ;
-
         Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     private void Start()
