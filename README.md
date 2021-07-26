@@ -36,3 +36,15 @@ Daedelus (Make It Drums)
 ### MIDI Controller
 
 ![DJ](Images/controller.jpg)
+
+### Created by
+
+Tauma Lobacheva
+Nick O'Rourke
+Feras Albaroudi
+Shirley Shao
+Roman Gromov
+Fiona Lai
+Kevin Wang
+Tyler Hindmarsh
+Cheng-Zhen Yang
